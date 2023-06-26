@@ -24,7 +24,7 @@ const pages: INavigationItem[] = [
 
 const ItemDefaultClassNames: string = "text-2xl md:text-4xl text-center  md:text-start transition-all ease-in-out delay-10";
 
-const Item: React.ReactNode = ({ value, url } : INavigationItem) => {
+const Item = ({ value, url } : INavigationItem) => {
     return <Link className={"hover:text-primary font-bold text-white hover:ml-4" + " " +ItemDefaultClassNames}
                  href={url}>
         {value}
@@ -32,7 +32,7 @@ const Item: React.ReactNode = ({ value, url } : INavigationItem) => {
 };
 
 
-const ActiveItem: React.ReactNode = ({ value, url } : INavigationItem) => {
+const ActiveItem = ({ value, url } : INavigationItem) => {
     return <Link className={"font-black text-black" + " " + ItemDefaultClassNames}
                  href={url}>
         <span className="bg-primary my-2 p-1 rounded-sm">

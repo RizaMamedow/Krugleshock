@@ -4,7 +4,7 @@ import * as React from "react";
 
 const iconStyles = {width: '39px', height: '39px'};
 
-export const RefsBox: React.ReactNode = () => {
+export const RefsBox = () => {
     return (
         <div className="flex md:mt-20">
             <a href={process.env.INSTAGRAM_LINK} target="_blank">
