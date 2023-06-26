@@ -1,7 +1,9 @@
 import * as React from "react";
-import './globals.css';
+import '../styles/globals.css';
 import {AppHeader, Navigation} from "../components";
-
+import 'tailwindcss/utilities.css';
+import 'tailwindcss/components.css';
+import 'tailwindcss/base.css';
 
 export default function App({ Component, pageProps: { session, ...pageProps }}) {
     return (
