@@ -1,6 +1,6 @@
 import * as React from "react";
 import './globals.css';
-import {AppHeader, ContentBox, Navigation} from "../components";
+import {AppHeader, Navigation} from "../components";
 
 
 export default function App({ Component, pageProps: { session, ...pageProps }}) {
