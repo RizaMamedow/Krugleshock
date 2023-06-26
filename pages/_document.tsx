@@ -12,6 +12,7 @@ export default function Document() {
                 <meta name="robots" content="index, nofollow" />
                 <meta name="keywords" content="Riza Mamedov, Portfolio, Krugleshock" />
                 <meta name="author" content="Riza Mamedov" />
+                <link rel="icon" href="/favicon.ico" sizes="any" />
             </Head>
             <body>
                 <Main />

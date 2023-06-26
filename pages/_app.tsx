@@ -7,16 +7,18 @@ import 'tailwindcss/base.css';
 
 export default function App({ Component, pageProps: { session, ...pageProps }}) {
     return (
-        <div className='pt-5 md:pt-10 min-h-screen px-15 lg:px-52 pb-10'>
-            <div className="flex align-center flex-col ">
-                <AppHeader/>
-                <div className="mt-5 md:mt-20 container mx-auto grid grid-cols-1 md:grid-cols-3 gap-1">
-                    <Navigation/>
-                    <div className="col-span-2 p-5">
-                        <Component {...pageProps} />
+        <>
+            <div className='pt-5 md:pt-10 min-h-screen px-15 lg:px-52 pb-10'>
+                <div className="flex align-center flex-col ">
+                    <AppHeader/>
+                    <div className="mt-5 md:mt-20 container mx-auto grid grid-cols-1 md:grid-cols-3 gap-1">
+                        <Navigation/>
+                        <div className="col-span-2 p-5">
+                            <Component {...pageProps} />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
