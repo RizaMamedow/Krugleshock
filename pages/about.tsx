@@ -1,6 +1,4 @@
 import * as React from "react";
-import Image from "next/image";
-import {FaGithub, FaInstagram, FaTelegramPlane} from "react-icons/fa";
 import {RefsBox} from "../components";
 
 

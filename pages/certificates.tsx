@@ -12,7 +12,7 @@ const CertificatesPage: React.FC = () => {
                     return (
                         <div key={index}>
                             <a href={item.url}>
-                                <div className="p-1 rounded-sm bg-zinc-900 transition-all easy-on-out hover:bg-zinc-800 h-full">
+                                <div className="p-1 rounded-sm bg-zinc-900 transition-all easy-in-out hover:bg-zinc-800 h-full">
                                     <Image
                                         className="rounded-sm"
                                         src={item.url}

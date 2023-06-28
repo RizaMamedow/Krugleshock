@@ -3,7 +3,7 @@ import Image from 'next/image'
 import {RefsBox} from "../components";
 
 
-const Home: React.FC = () => {
+const HomePage: React.FC = () => {
     return (
         <>
             <div className="grid grid-cols-4 mb-5">
@@ -21,7 +21,7 @@ const Home: React.FC = () => {
                         width={250}
                         height={250}
                         alt="Picture of the author"
-                        className="rounded-full"
+                        className="rounded-full slow-spin-animation"
                     />
                 </div>
             </div>
@@ -30,4 +30,4 @@ const Home: React.FC = () => {
     )
 };
 
-export default Home;
+export default HomePage;

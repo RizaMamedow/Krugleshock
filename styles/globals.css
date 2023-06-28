@@ -3,6 +3,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import 'animations.css';
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -33,3 +34,4 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #d7b318;
 }
+

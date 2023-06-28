@@ -1,6 +1,4 @@
 import * as React from "react";
-import Image from 'next/image'
-import {RefsBox} from "../components";
 
 
 const Error404: React.FC = () => {
