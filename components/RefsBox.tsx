@@ -8,7 +8,7 @@ export const RefsBox = () => {
     return (
         <div className="flex md:mt-20">
             <a href={process.env.INSTAGRAM_LINK} target="_blank">
-                <FaInstagram className="text-fuchsia-600  p-1" style={iconStyles}/>
+                <FaInstagram className="text-pink-500 p-1" style={iconStyles}/>
             </a>
             <a href={process.env.TELEGRAM_LINK} target="_blank">
                 <FaTelegramPlane className="text-blue-500 p-1" style={iconStyles}/>
