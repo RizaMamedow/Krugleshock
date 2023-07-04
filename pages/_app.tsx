@@ -3,7 +3,7 @@ import '../styles/globals.css';
 import {AppHeader, Navigation} from "../components";
 import {NextIntlClientProvider} from "next-intl";
 import {LocaleSwitcher} from "../components";
-
+import {SiVercel, SiNextdotjs} from "react-icons/si";
 
 export default function App({ Component, pageProps: { ...pageProps }}) {
     return (
@@ -21,6 +21,9 @@ export default function App({ Component, pageProps: { ...pageProps }}) {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="m-6 text-white text-sm italic flex justify-center content-center">
+                Built with <SiNextdotjs className="mx-1 mt-0.5"/> Next.js, deployed with <SiVercel className="mx-1 mt-0.5"/> Vercel
             </div>
         </NextIntlClientProvider>
     );

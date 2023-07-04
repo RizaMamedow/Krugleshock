@@ -1,5 +1,4 @@
 import * as React from "react";
-import {RefsBox} from "../components";
 import {useTranslations} from "next-intl";
 import {GetStaticPropsContext} from "next";
 
@@ -24,9 +23,8 @@ const AboutPage: React.FC = () => {
         <div>
             <h3 className="text-3xl font-semibold text-white">{t("about.baseHeader")}</h3>
             <AboutContent />
-            <a href={process.env.REPOSITORY_LINK} className="text-primary">{t("about.repo")}</a>
             <br/>
-            <RefsBox/>
+            <a href={process.env.REPOSITORY_LINK} className="text-primary">{t("about.repo")}</a>
         </div>
     )
 };
