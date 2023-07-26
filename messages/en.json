@@ -18,6 +18,10 @@
   "certificates":{
     "baseHeader": "Certificates"
   },
+  "page404": {
+    "baseHeader": "404 | Page not found",
+    "subheader": "Now you are redirecting to home page"
+  },
   "component": {
     "header": {
       "title": "Krugleshock"

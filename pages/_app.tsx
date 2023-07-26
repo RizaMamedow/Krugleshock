@@ -5,6 +5,7 @@ import {NextIntlClientProvider} from "next-intl";
 import {LocaleSwitcher} from "../components";
 import {SiVercel, SiNextdotjs} from "react-icons/si";
 
+// @ts-ignore
 export default function App({ Component, pageProps: { ...pageProps }}) {
     return (
         <NextIntlClientProvider messages={pageProps.messages}>

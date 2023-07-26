@@ -31,6 +31,10 @@
       "switchLocale": "{locale, select, ru {Русский} en {Английкий} other {Неизвестный}}"
     }
   },
+  "page404": {
+    "baseHeader": "404 | Страница не найдена",
+    "subheader": "Сейчас вы перенаправляетесь на главную страницу"
+  },
   "author": {
     "firstname": "Риза",
     "lastname": "Мамедов"
