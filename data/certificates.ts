@@ -3,7 +3,7 @@ export interface ICertificate {
     url: string;
     technology: string;
     date: string;
-    from: 'sololearn' | 'stepik'
+    from: 'sololearn' | 'stepik' | 'freeCodeCamp'
 }
 
 export const certificates: ICertificate[] = [
@@ -97,5 +97,12 @@ export const certificates: ICertificate[] = [
         technology: 'Программирование на языке C#',
         date: '12/12/2022',
         from: 'stepik'
+    },
+    {
+        id: 14,
+        url: '/certificates/14.png',
+        technology: 'Responsive Web Design',
+        date: '26/07/2023',
+        from: 'freeCodeCamp'
     }
 ];
