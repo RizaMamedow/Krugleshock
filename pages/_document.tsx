@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import * as React from "react";
+import Script from "next/script";
 
 export default function Document() {
     return (
@@ -17,14 +18,14 @@ export default function Document() {
             <body>
                 <Main />
                 <NextScript />
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KNDXGB249"></script>
-                <script>
+                <Script async src="https://www.googletagmanager.com/gtag/js?id=G-6KNDXGB249"></Script>
+                <Script>
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
 
                     gtag('config', 'G-6KNDXGB249');
-                </script>
+                </Script>
             </body>
         </Html>
     )
