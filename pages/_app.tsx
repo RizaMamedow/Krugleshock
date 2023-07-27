@@ -20,7 +20,7 @@ export default function App({ Component, pageProps: { ...pageProps }}) {
         return () => {
             router.events.off("routeChangeComplete", handleRouteChange)
         }
-    }, [])
+    }, [router.events])
     return (
         <>
             <Script
