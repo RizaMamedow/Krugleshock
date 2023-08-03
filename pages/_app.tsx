@@ -5,6 +5,7 @@ import {NextIntlClientProvider} from "next-intl";
 import {LocaleSwitcher} from "../components";
 import {SiVercel, SiNextdotjs} from "react-icons/si";
 import {useRouter} from "next/router";
+import { Analytics } from '@vercel/analytics/react';
 
 // @ts-ignore
 export default function App({ Component, pageProps: { ...pageProps }}) {
@@ -30,7 +31,9 @@ export default function App({ Component, pageProps: { ...pageProps }}) {
                     Built with <SiNextdotjs className="mx-1 mt-0.5"/> Next.js, deployed with <SiVercel className="mx-1 mt-0.5"/> Vercel
                 </div>
             </NextIntlClientProvider>
+            <Analytics />
         </>
+
 
     );
 };

@@ -1,12 +1,21 @@
 import * as React from "react";
 import Image from "next/image";
-import {certificates, ICertificate} from "../data/certificates";
+import {ICertificate} from "../logics/interfaces";
 import {GetStaticPropsContext} from "next";
 import {useTranslations} from "next-intl";
+import {useEffect, useState} from "react";
+import axios from "axios";
 
 
 const CertificatesPage: React.FC = () => {
     const t = useTranslations();
+    const [certificates, setCertificates] = useState<ICertificate[]>([]);
+
+    useEffect(() => {
+        axios.get("/api/certificates").then((res) => {
+            setCertificates(res.data)
+        })
+    }, []);
 
     return (
         <div>
