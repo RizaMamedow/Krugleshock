@@ -6,13 +6,13 @@ const AboutContent = () => {
     const t = useTranslations();
 
     return (
-        <div>
-            <p className="text-white text-lg mt-3">{t("about.content.1")}</p>
-            <p className="text-white text-lg mt-3">{t("about.content.2")}</p>
-            <p className="text-white text-lg mt-3">{t("about.content.3")}</p>
-            <p className="text-white text-lg mt-3">{t("about.content.4")}</p>
-            <p className="text-white text-lg mt-3">{t("about.content.5")}</p>
-            <p className="text-white text-lg mt-3">{t("about.content.6")}</p>
+        <div className="text-white text-lg">
+            <p className="mt-3">{t("about.content.1")}</p>
+            <p className="mt-3">{t("about.content.2")}</p>
+            <p className="mt-3">{t("about.content.3")}</p>
+            <p className="mt-3">{t("about.content.4")}</p>
+            <p className="mt-3">{t("about.content.5")}</p>
+            <p className="mt-3">{t("about.content.6")}</p>
         </div>
     )
 };
