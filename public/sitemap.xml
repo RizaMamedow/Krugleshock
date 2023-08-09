@@ -1,0 +1,29 @@
+<xml version="1.0" encoding="UTF-8">
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+        <url>
+            <loc>https://krugleshock.vercel.app/</loc>
+        </url>
+        <url>
+            <loc>https://krugleshock.vercel.app/404</loc>
+        </url>
+        <url>
+            <loc>https://krugleshock.vercel.app/about</loc>
+        </url>
+        <url>
+            <loc>https://krugleshock.vercel.app/certificates</loc>
+        </url>
+
+        <url>
+            <loc>https://krugleshock.vercel.app/ru/</loc>
+        </url>
+        <url>
+            <loc>https://krugleshock.vercel.app/ru/404</loc>
+        </url>
+        <url>
+            <loc>https://krugleshock.vercel.app/ru/about</loc>
+        </url>
+        <url>
+            <loc>https://krugleshock.vercel.app/ru/certificates</loc>
+        </url>
+    </urlset>
+</xml>
