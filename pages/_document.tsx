@@ -13,6 +13,7 @@ export default function Document() {
                 <meta name="robots" content="index, nofollow" />
                 <meta name="keywords" content="Riza Mamedov, Portfolio, Krugleshock" />
                 <meta name="author" content="Riza Mamedov" />
+                <meta name="google-site-verification" content="V6k2d2TaNadQ6XDrU31ZUwaJLTaR0dA1rLDrWGjybNE" />
                 <link rel="icon" href="/favicon.ico" sizes="any" />
             </Head>
             <body>
@@ -21,4 +22,4 @@ export default function Document() {
             </body>
         </Html>
     )
-}
+};
