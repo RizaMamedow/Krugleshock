@@ -40,3 +40,5 @@ jspm_packages
 .idea
 package-lock.json
 .vercel
+.env.development.local
+.env

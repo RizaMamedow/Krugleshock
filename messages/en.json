@@ -4,6 +4,7 @@
     "text": "I am Riza, I live in Ashgabat.\r\n now I am in 10th grade (2007) and I am a programmer, I write in Typescript \r\n and in python these are my main areas"
   },
   "about": {
+    "title": "Krugleshock | About me",
     "baseHeader": "About me",
     "content": {
       "1": "My story is short. I am a guy from the town, I lived and was, but somehow there was an interest in IT. It probably started with games that I couldn't play because of the difficulty (Europa Universalis 4, etc.), well, in a single player game, I started using commands and digging into game configs, cheats, trainers, and so on. Well, I had a dream, like many others, to make my own game...",
@@ -16,9 +17,11 @@
     "repo": "Repository"
   },
   "certificates":{
+    "title": "Krugleshock | Certificates",
     "baseHeader": "My achievements"
   },
   "page404": {
+    "title": "Krugleshock | Not found",
     "baseHeader": "404 | Page not found",
     "subheader": "Now you are redirecting to home page"
   },
@@ -37,6 +40,6 @@
   },
   "author": {
     "firstname": "Riza",
-    "lastname": "Mamedov"
+    "lastname": "Mamedow"
   }
 }

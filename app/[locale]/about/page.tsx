@@ -1,6 +1,9 @@
+'use client';
+
+import {useTranslations} from 'next-intl';
+import Image from "next/image";
 import * as React from "react";
-import {useTranslations} from "next-intl";
-import {GetStaticPropsContext} from "next";
+import Config from "../../../logics/config";
 
 const AboutContent = () => {
     const t = useTranslations();
@@ -16,26 +19,15 @@ const AboutContent = () => {
         </div>
     )
 };
-
-const AboutPage: React.FC = () => {
+export default function Page() {
     const t = useTranslations();
+
     return (
         <div>
             <h3 className="text-3xl font-semibold text-white">{t("about.baseHeader")}</h3>
             <AboutContent />
             <br/>
-            <a href={process.env.REPOSITORY_LINK} className="text-primary">{t("about.repo")}</a>
+            <a href={Config.links.repo} className="text-primary">{t("about.repo")}</a>
         </div>
     )
-};
-
-export async function getStaticProps({locale}: GetStaticPropsContext) {
-    // noinspection TypeScriptCheckImport
-    return {
-        props: {
-            messages: (await import(`../messages/${locale}.json`)).default
-        }
-    };
 }
-
-export default AboutPage;

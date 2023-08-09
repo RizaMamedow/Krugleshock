@@ -1,9 +1,9 @@
-import * as React from "react";
-import Image from 'next/image'
-import {RefsBox} from "../components/";
-import {GetStaticPropsContext} from "next";
-import {useTranslations} from "next-intl";
+'use client';
 
+import {useTranslations} from 'next-intl';
+import Image from "next/image";
+import * as React from "react";
+import {RefsBox} from "../../components/RefsBox";
 
 const Avatar = () => (
     <div className="p-2 pt-0">
@@ -17,7 +17,7 @@ const Avatar = () => (
     </div>
 );
 
-const HomePage: React.FC = () => {
+export default function Page() {
     const t = useTranslations();
 
     return (
@@ -27,7 +27,10 @@ const HomePage: React.FC = () => {
                     <Avatar/>
                 </div>
                 <div className="col-span-3">
-                    <h3 className="text-3xl font-bold text-white">{t('index.baseHeader')} <span className="text-primary">{t('author.firstname')}</span></h3>
+                    <h3 className="text-3xl font-bold text-white">
+                        {t('index.baseHeader')}
+                        <span className="text-primary">{t('author.firstname')}</span>
+                    </h3>
                     <p className="text-white mt-5 text-xl">
                         {t('index.text')}
                     </p>
@@ -39,15 +42,4 @@ const HomePage: React.FC = () => {
             <RefsBox />
         </>
     )
-};
-
-export async function getStaticProps({locale}: GetStaticPropsContext) {
-    // noinspection TypeScriptCheckImport
-    return {
-        props: {
-            messages: (await import(`../messages/${locale}.json`)).default
-        }
-    };
 }
-
-export default HomePage;

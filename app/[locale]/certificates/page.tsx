@@ -1,23 +1,22 @@
-import * as React from "react";
+'use client';
+
+import {useTranslations} from 'next-intl';
 import Image from "next/image";
-import {ICertificate} from "../logics/interfaces";
-import {GetStaticPropsContext} from "next";
-import {useTranslations} from "next-intl";
+import * as React from "react";
 import {useEffect, useState} from "react";
+import {ICertificate} from "../../../logics/interfaces";
 import axios from "axios";
 import {Oval} from "react-loader-spinner";
 
-
-const CertificatesPage: React.FC = () => {
+export default function Page() {
     const t = useTranslations();
     const [certificates, setCertificates] = useState<ICertificate[]>([]);
     const [isLoading, setLoading] = useState<boolean>(true);
+
     useEffect(() => {
         axios.get("/api/certificates").then((res) => {
             setCertificates(res.data);
-            console.log(res.data);
             setLoading(false);
-            console.log(isLoading)
         })
     }, []);
 
@@ -44,29 +43,18 @@ const CertificatesPage: React.FC = () => {
                     ))}
                 </div>
             ) : (
-                    <Oval
-                        height={80}
-                        width={80}
-                        color="#FFD51E"
-                        wrapperClass="flex justify-center items-center h-[300px]"
-                        visible={true}
-                        ariaLabel='oval-loading'
-                        secondaryColor="#b4941a"
-                        strokeWidth={4}
-                        strokeWidthSecondary={4}
-                    />
+                <Oval
+                    height={80}
+                    width={80}
+                    color="#FFD51E"
+                    wrapperClass="flex justify-center items-center h-[300px]"
+                    visible={true}
+                    ariaLabel='oval-loading'
+                    secondaryColor="#b4941a"
+                    strokeWidth={4}
+                    strokeWidthSecondary={4}
+                />
             )}
         </div>
     )
-};
-
-export async function getStaticProps({locale}: GetStaticPropsContext) {
-    // noinspection TypeScriptCheckImport
-    return {
-        props: {
-            messages: (await import(`../messages/${locale}.json`)).default
-        }
-    };
 }
-
-export default CertificatesPage;

@@ -1,3 +1,5 @@
+'use client'
+
 import * as React from "react";
 import {useTranslations} from "next-intl";
 
@@ -7,7 +9,7 @@ export const AppHeader: React.FC = () => {
     const t = useTranslations();
     return (
         <h1 className="text-4xl md:text-7xl font-black italic text-white text-center text-border-size-2
-         text-border-primary text-center" style={textShadowStyles}>
+         text-border-primary" style={textShadowStyles}>
             {t('component.header.title')}
         </h1>
     )
