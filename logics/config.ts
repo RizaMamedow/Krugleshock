@@ -1,9 +1,9 @@
 const Config = {
     links: {
-        instagram: process.env.INSTAGRAM_LINK,
-        telegram: process.env.TELEGRAM_LINK,
-        github: process.env.GITHUB_LINK,
-        repo: process.env.REPOSITORY_LINK
+        instagram: "https://www.instagram.com/krugleshock",
+        telegram: "https://t.me/krugleshock",
+        github: "https://github.com/RizaMamedow",
+        repo: "https://github.com/RizaMamedow/Krugleshock"
     },
     localeConfig: {
         locales: ['ru', 'en'],

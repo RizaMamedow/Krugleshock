@@ -47,11 +47,6 @@ export const Navigation: React.FC = () => {
         },
     ];
 
-    useEffect(() => {
-        console.log(pathname)
-        console.log(`/en${pages[0].url}`)
-    }, []);
-
     return (
         <div>
             <div className="grid grid-col-1 mb-5 md:mb-0 md:mt-16 gap-2">
