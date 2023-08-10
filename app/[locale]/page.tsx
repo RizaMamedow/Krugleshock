@@ -27,10 +27,10 @@ export default function Page() {
                     <Avatar/>
                 </div>
                 <div className="col-span-3">
-                    <h3 className="text-3xl font-bold text-white">
+                    <h2 className="text-3xl font-bold text-white">
                         {t('index.baseHeader')}
                         <span className="text-primary">{t('author.firstname')}</span>
-                    </h3>
+                    </h2>
                     <p className="text-white mt-5 text-xl">
                         {t('index.text')}
                     </p>

@@ -24,7 +24,7 @@ export default function Page() {
 
     return (
         <div>
-            <h3 className="text-3xl font-semibold text-white">{t("about.baseHeader")}</h3>
+            <h2 className="text-3xl font-semibold text-white">{t("about.baseHeader")}</h2>
             <AboutContent />
             <br/>
             <a href={Config.links.repo} className="text-primary">{t("about.repo")}</a>

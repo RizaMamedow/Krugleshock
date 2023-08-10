@@ -22,7 +22,7 @@ export default function Page() {
 
     return (
         <div>
-            <h3 className="text-3xl font-semibold text-white">{t('certificates.baseHeader')}</h3>
+            <h2 className="text-3xl font-semibold text-white">{t('certificates.baseHeader')}</h2>
             {!isLoading ? (
                 <div className="container grid grid-cols-2 gap-3 xl:grid-cols-3 mt-2">
                     {certificates.map((item: ICertificate, index) => (
