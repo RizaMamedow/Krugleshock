@@ -1,0 +1,28 @@
+{
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ru {🇷🇺 Rus} en {🇬🇧 Eng} other {Unknown}}"
+  },
+  "Header": {
+    "subtitle": "Web developer | iOS developer"
+  },
+  "Navigation": {
+    "home": "Homepage",
+    "about": "About me",
+    "certificates": "Certificates"
+  },
+  "Home": {
+    "header": "Hello!",
+    "authorName": "I'm Riza",
+    "text": "I'm Riza, I live in Ashgabat. Now I was born in 2007 and I am a programmer. This site is my business card to get to know me. The site will be expanded over time. <br></br> Now I'm studying mobile iOS development. Quite familiar with web application development, especially in React and NextJS, and also well acquainted with creating backends and APIs in Django and django-rest-framework. <br></br> If you want to read about me, go to the 'about' section. and if you want to see my achievements, go to the 'certificates' section."
+  },
+  "About": {
+    "header": "This page about me!",
+    "content": "My story is short. I am a guy from the town, I lived and was, but somehow there was an interest in IT. It probably started with games that I couldn't play because of the difficulty (Europa Universalis 4, etc.), well, in a single player game, I started using commands and digging into game configs, cheats, trainers, and so on. Well, I had a dream, like many others, to make my own game... <br></br> ... Well, well, I turned in the wrong direction because I ended up in Web programming. Okay in order. HTML is the first thing I learned. further CSS, Javascript, and python. I still write in Python. then there was a stagnation for about a year 2 could not find itself. Studied from the word 'everything!' Godot, Ruby, Go, C#, Flutter. But now I have chosen the main direction is SwiftUI, NextJS and Django. <br></br> Flutter is cool, but not for huge projects, but for small and simple applications, as for me, this is a cool framework <br></br> I did not immediately come to NextJS. I got my hands on React but I hated Javascript and now I write exclusively in Typescript because it's really a convenient thing. And NextJS is generally a cool framework! <br></br> I have learned Django well. The framework is robust, user-friendly, beautiful and stable, and Django has the best documentation I've seen. <br></br> That's all. that's all you need to know about me. my contacts below as well as the repository of this site follow the link.",
+    "repo": "Source code"
+  },
+  "Certificates": {
+    "header": "My achivements"
+  }
+}
+
