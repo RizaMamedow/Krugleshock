@@ -18,7 +18,7 @@ export default function Home() {
     const t = useTranslations("Home");
 	
 	return (
-		<div>
+		<section>
 			 <div className="grid grid-cols-1 md:grid-cols-4 align-center">
                 <div className="mb-3 md:hidden flex justify-center">
                     <Avatar/>
@@ -35,6 +35,6 @@ export default function Home() {
                     <Avatar/>
                 </div>
             </div>
-		</div>
+		</section>
 	);
 }

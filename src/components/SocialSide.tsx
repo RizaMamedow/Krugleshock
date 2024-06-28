@@ -30,13 +30,13 @@ export default function SocialSide() {
     ]
 
     return (
-        <div className={clsx(
+        <section className={clsx(
             "rounded-2xl lg:shadow-xl lg:bg-white px-2 flex gap-1 items-center", 
         )}>
             {socials.map((social, index) => (
                 <SocialLink {...social} key={index}/>
             ))}
-        </div>
+        </section>
     )
 }
 

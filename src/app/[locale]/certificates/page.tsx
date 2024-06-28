@@ -6,7 +6,7 @@ export default function CertificatesPage() {
     const t = useTranslations("Certificates");
 
     return (
-        <div>
+        <section>
             <h3 className="text-3xl font-semibold text-secondary">{t('header')}</h3>
             <div className="container grid grid-cols-2 gap-4 xl:grid-cols-3 mt-2">
                 {certificates.map((item: ICertificate, index) => {
@@ -32,6 +32,6 @@ export default function CertificatesPage() {
                     )
                 })}
             </div>
-        </div>
+        </section>
     )
 };

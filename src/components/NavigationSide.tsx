@@ -39,13 +39,13 @@ function NavigationOption({ name, url }: NavigationLink) {
     const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : '/';
   
     return (
-        <div className="mb-1">
+        <div className="mb-1">        
             <Link href={url}>
                 <h4 className={clsx(
                     url == pathname ? activeLinkClassNames : passiveLinkClassNames, 
                     "lg:text-2xl text-lg font-bold px-2 py-1 transition-all ease-in-out",
                 )}>{name}</h4>
-            </Link>            
+            </Link> 
         </div>
     )
 }

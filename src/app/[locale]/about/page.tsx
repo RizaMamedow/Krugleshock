@@ -7,7 +7,7 @@ export default function AboutPage() {
     const t = useTranslations("About")
 
     return (
-        <div>
+        <section>
             <h2 className="text-2xl font-semibold text-secondary">{t("header")}</h2>
             <p className="text-secondary text-md">{t.rich("content", {
                 br: () => (
@@ -16,6 +16,6 @@ export default function AboutPage() {
             })}</p>
             <br/>
             <a href={Links.repository} target="_blank" className="text-primary text-xl hover:underline">{t('repo')}</a>
-        </div>
+        </section>
     )
 }
