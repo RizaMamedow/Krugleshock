@@ -14,7 +14,7 @@
   "Home": {
     "header": "Hello!",
     "authorName": "I'm Riza",
-    "text": "I'm Riza, I live in Ashgabat. Now I was born in 2007 and I am a programmer. This site is my business card to get to know me. The site will be expanded over time. <br></br> Now I'm studying mobile development. Quite familiar with web application development, especially in React and NextJS, and also well acquainted with creating backends and APIs in Django and django-rest-framework. <br></br> If you want to read about me, go to the 'about' section. and if you want to see my achievements, go to the 'certificates' section."
+    "text": "I'm Riza, I live in Ashgabat. I was born in 2007 and I am a programmer. This site is my business card to get to know me. The site will be expanded over time. <br></br> Now I'm studying mobile development. Quite familiar with web application development, especially in React and NextJS, and also well acquainted with creating backends and APIs in Django and django-rest-framework. <br></br> If you want to read about me, go to the 'about' section. and if you want to see my achievements, go to the 'certificates' section."
   },
   "About": {
     "header": "This page about me!",
