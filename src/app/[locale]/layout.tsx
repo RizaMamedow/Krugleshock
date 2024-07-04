@@ -8,6 +8,7 @@ import NavigationSide from "@/src/components/NavigationSide";
 import SocialSide from '@/src/components/SocialSide';
 import LanguageSwitcher from "@/src/components/LanguageSwitcher";
 import clsx from "clsx";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
 	title: "Krugleshock | Riza Mamedow",
@@ -72,6 +73,8 @@ export default async function RootLayout({
 						</div>
 					</main>
 				</NextIntlClientProvider>
+
+				<SpeedInsights />	
 			</body>
 		</html>
 	);

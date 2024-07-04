@@ -6,8 +6,50 @@
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-# Setup project
-First download the project to install `git clone https://github.com/RizaMamedow/Krugleshock.git`. Next you need to install dependencies `yarn install` Then you can run the project using the command `yarn run dev`. If you want to build a project, you can do it through the command `yarn run build`. You can also run a locally built project via the command `yarn run start`.
+# Krugelshock
+Krugelshock is the source code for my site. This is a simple project with adaptive layout and translation support.
 
-## Learn more
-This is the source code of my site, you can view it through the link krugleshok.vercel.app. This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages /create-next-app) and deployed to [Vercel](https://vercel.com).
+## Getting Started
+These guidelines will assist you in setting up a local instance of the project for development purposes. Refer to the Deployment section for instructions on how to deploy the project to a production environment.
+
+### Prerequisites
+Here is the necessary list for working with the software
+
+1. Node js
+2. Npm/yarn
+
+Thats all. xD
+
+### Installing
+Run this command to install the environment and dependencies.
+
+go to project root directory and run:
+```shell
+npm install
+```
+or
+```shell
+yarn install
+```
+when all the dependencies are installed you will get the installed project ready to run
+
+
+## Deployment
+To deploy a project on the server, you can use any "guide for deploying a project on NextJS" that can be found on the Internet. there is an option to scan on vercel, which is what I did
+
+## Built With
+* [Next js](https://nextjs.org/) on [Typescript](https://www.typescriptlang.org/) - The framework used 
+* [TaiwindCSS](https://tailwindcss.com/) - CSS framework used
+* [yarn](https://yarnpkg.com/) - dependency management
+* [next-intl](https://next-intl-docs.vercel.app/) - library for localization used 
+
+
+## Authors
+* Riza Mamedow - Initial work and further assistance - [RizaMamedow](https://github.com/RizaMamedow)
+
+here is a list of "names - work done - links" of authors.
+
+See also the list of contributors who participated in this project.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE.md) file for details
