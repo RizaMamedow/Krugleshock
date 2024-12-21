@@ -3,6 +3,19 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin();
  
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: "api2.sololearn.com"
+            },
+            {
+                protocol: 'https',
+                hostname: "stepik.org"
+            }
+        ]
+    }
+};
  
 export default withNextIntl(nextConfig);

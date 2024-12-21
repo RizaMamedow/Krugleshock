@@ -1,7 +1,7 @@
 'use client';
 
 import {useLocale, useTranslations} from 'next-intl';
-import {locales} from '@/src/config';
+import {LOCALES} from '@/src/configurations';
 import { LanguageSwitcherSelect } from './LanguageSwitcherSelect';
 
 
@@ -12,7 +12,7 @@ export default function LanguageSwitcher() {
     return (
         <div className='lg:bg-white lg:shadow-xl lg:rounded-xl'>
             <LanguageSwitcherSelect defaultValue={locale} label={t('label')}>
-                {locales.map((cur) => (
+                {LOCALES.map((cur) => (
                     <option key={cur} value={cur}>
                         {t('locale', {locale: cur})}
                     </option>

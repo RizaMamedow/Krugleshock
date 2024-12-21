@@ -1,14 +1,14 @@
 import {Pathnames, LocalePrefix} from 'next-intl/routing';
 
-export const locales = ['ru', 'en']
+export const LOCALES = ['ru', 'en']
 
-export const pathnames: Pathnames<typeof locales> = {
+export const PATHNAMES: Pathnames<typeof LOCALES> = {
     '/': '/',
 };
 
-export const localePrefix: LocalePrefix<typeof locales> = 'always';
+export const LOCAL_PREFIX: LocalePrefix<typeof LOCALES> = 'always';
 
-export const Links = {
+export const SOCIAL_LINKS = {
     instagram: "https://www.instagram.com/krugleshock/",
     telegram: "https://t.me/krugleshock",
     linkedin: "https://www.linkedin.com/in/rizamamedow/",

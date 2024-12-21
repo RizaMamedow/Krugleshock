@@ -1,4 +1,4 @@
-import { certificates, ICertificate } from "@/src/data/certificates";
+import { certificateGroup, Certificate } from "@/src/types/certificateGroup";
 import { useTranslations } from "next-intl";
 import Image from "next/image"
 
@@ -9,7 +9,7 @@ export default function CertificatesPage() {
         <section>
             <h3 className="text-3xl font-semibold text-secondary">{t('header')}</h3>
             <div className="container grid grid-cols-2 gap-4 xl:grid-cols-3 mt-2">
-                {certificates.map((item: ICertificate, index) => {
+                {certificateGroup.map((item: Certificate, index) => {
                     return (
                         <div key={index}>
                             <a href={item.url}>

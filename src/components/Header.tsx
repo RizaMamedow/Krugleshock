@@ -4,10 +4,10 @@ import { Playfair_Display } from "next/font/google"
 
 const playfair = Playfair_Display({
     weight: ['400', '700', '800', '900'],
-    subsets: ['latin']
+    subsets: ['latin', 'cyrillic']
 })
 
-export default function BrandSide() {
+export default function Header() {
 	const t = useTranslations("Header")
 	return (
 		<div className={clsx(playfair.className, "flex justify-center items-center mt-5 mb-7 flex-col gap-2")}>

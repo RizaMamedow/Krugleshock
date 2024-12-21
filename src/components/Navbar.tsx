@@ -4,19 +4,16 @@ import { useTranslations } from "next-intl"
 import { Link } from "@/src/navigation"
 import { useSelectedLayoutSegment } from 'next/navigation'
 import clsx from "clsx"
+import {NavLink} from "@/src/types/navigation";
 
-type NavigationLink = {
-    name: string,
-    url: string,
-}
 
 const activeLinkClassNames = clsx("bg-gradient-to-r from-primary-variant to-primary ", "text-white rounded-xl")
 const passiveLinkClassNames = "text-secondary hover:translate-x-1.5 lg:hover:bg-clip-text lg:hover:text-transparent lg:hover:bg-gradient-to-r lg:hoverbg-gradient-to-r from-primary-variant to-primary "
 
-export default function NavigationSide() {
+export default function Navbar() {
     const t = useTranslations('Navigation')
 
-    const list: NavigationLink[]  = [
+    const list: NavLink[]  = [
         {name: t("home"), url: "/"},
         {name: t("about"), url: "/about"},
         {name: t("certificates"), url: "/certificates"},
@@ -34,7 +31,7 @@ export default function NavigationSide() {
 }
 
 
-function NavigationOption({ name, url }: NavigationLink) {
+function NavigationOption({ name, url }: NavLink) {
     const selectedLayoutSegment = useSelectedLayoutSegment();
     const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : '/';
   

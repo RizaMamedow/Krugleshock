@@ -3,9 +3,9 @@ import { Piazzolla } from "next/font/google";
 import "./globals.css";
 import {NextIntlClientProvider} from 'next-intl';
 import {getLocale, getMessages} from 'next-intl/server';
-import BrandSide from "@/src/components/BrandSide";
-import NavigationSide from "@/src/components/NavigationSide";
-import SocialSide from '@/src/components/SocialSide';
+import Header from "@/src/components/Header";
+import Navbar from "@/src/components/Navbar";
+import References from '@/src/components/References';
 import LanguageSwitcher from "@/src/components/LanguageSwitcher";
 import clsx from "clsx";
 import { SpeedInsights } from '@vercel/speed-insights/next';
@@ -40,7 +40,7 @@ export default async function RootLayout({
 
 	const BottomSide = () => (
 		<>
-			<SocialSide />
+			<References />
 			<LanguageSwitcher />
 		</>
 	)
@@ -50,11 +50,11 @@ export default async function RootLayout({
 			<body className="bg-background">
 				<NextIntlClientProvider messages={messages}>
 					<main className={clsx(piazzolla.className, "xl:px-52 md:px-24 p-3 px-2")}> 
-						<BrandSide />
+						<Header />
 						
 						<div className="grid lg:grid-cols-7 grid-cols-1 lg:gap-5 gap-1">
 							<div className="lg:col-span-2 col-span-1">
-								<NavigationSide />
+								<Navbar />
 								<div className="my-3 justify-between lg:flex hidden">
 									<BottomSide />
 								</div>	

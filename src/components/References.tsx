@@ -1,31 +1,27 @@
 import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Links } from '../config';
+import { SOCIAL_LINKS } from '../configurations';
+import {SocialLinkProps} from "@/src/types/props";
 
 
-export type SocialLinkProps = {
-    image: string,
-    url: string
-}
-
-export default function SocialSide() {
+export default function References() {
     const socials: SocialLinkProps[] = [
         {
             image: "/assets/social/telegram.svg",
-            url: Links.telegram
+            url: SOCIAL_LINKS.telegram
         },
         {
             image: "/assets/social/github.svg",
-            url: Links.github
+            url: SOCIAL_LINKS.github
         },
         {
             image: "/assets/social/instagram.svg",
-            url: Links.instagram
+            url: SOCIAL_LINKS.instagram
         },
         {
             image: "/assets/social/linkedin.svg",
-            url: Links.linkedin
+            url: SOCIAL_LINKS.linkedin
         }
     ]
 

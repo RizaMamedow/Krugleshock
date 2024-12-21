@@ -1,20 +1,15 @@
 import clsx from 'clsx';
 import {useParams} from 'next/navigation';
-import {ChangeEvent, ReactNode, useTransition} from 'react';
+import {ChangeEvent, useTransition} from 'react';
 import {useRouter, usePathname} from '@/src/navigation';
 import Image from 'next/image';
-
-type Props = {
-    children: ReactNode;
-    defaultValue: string;
-    label: string;
-};
+import {LanguageSwitcherSelectProps} from "@/src/types/props";
 
 export function LanguageSwitcherSelect({
     children,
     defaultValue,
     label
-}: Props) {
+}: LanguageSwitcherSelectProps) {
     const router = useRouter();
     const [isPending, startTransition] = useTransition();
     const pathname = usePathname();

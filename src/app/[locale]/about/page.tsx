@@ -1,6 +1,6 @@
 'use client'
-import { Links } from "@/src/config"
-import clsx from "clsx"
+
+import { SOCIAL_LINKS } from "@/src/configurations"
 import { useTranslations } from "use-intl"
 
 export default function AboutPage() {
@@ -15,7 +15,7 @@ export default function AboutPage() {
                 )
             })}</p>
             <br/>
-            <a href={Links.repository} target="_blank" className="text-primary text-xl hover:underline">{t('repo')}</a>
+            <a href={SOCIAL_LINKS.repository} target="_blank" className="text-primary text-xl hover:underline">{t('repo')}</a>
         </section>
     )
 }
