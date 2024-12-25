@@ -7,8 +7,8 @@ import clsx from "clsx"
 import {NavLink} from "@/src/types/navigation";
 
 
-const activeLinkClassNames = clsx("bg-gradient-to-r from-primary-variant to-primary ", "text-white rounded-xl")
-const passiveLinkClassNames = "text-secondary hover:translate-x-1.5 lg:hover:bg-clip-text lg:hover:text-transparent lg:hover:bg-gradient-to-r lg:hoverbg-gradient-to-r from-primary-variant to-primary "
+const activeLinkClassNames = clsx("bg-primary", "text-white rounded-xl")
+const passiveLinkClassNames = "text-secondary hover:translate-x-1.5 hover:text-primary"
 
 export default function Navbar() {
     const t = useTranslations('Navigation')
@@ -33,6 +33,7 @@ export default function Navbar() {
 
 function NavigationOption({ name, url }: NavLink) {
     const selectedLayoutSegment = useSelectedLayoutSegment();
+    // Detecting pathname of make
     const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : '/';
   
     return (
