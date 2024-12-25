@@ -53,10 +53,5 @@ To deploy a project on the server, you can use any "guide for deploying a projec
 
 ## 👥 Authors
 * Riza Mamedow - Initial work and further assistance - [RizaMamedow](https://github.com/RizaMamedow)
-
-here is a list of "names - work done - links" of authors.
-
-See also the list of contributors who participated in this project.
-
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE.md) file for details
