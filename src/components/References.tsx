@@ -20,8 +20,8 @@ export default function References() {
             url: SOCIAL_LINKS.instagram
         },
         {
-            image: "/assets/social/linkedin.svg",
-            url: SOCIAL_LINKS.linkedin
+            image: "/assets/social/codeberg.svg",
+            url: SOCIAL_LINKS.codeberg
         }
     ]
 
