@@ -15,7 +15,9 @@ const nextConfig = {
                 hostname: "stepik.org"
             }
         ]
-    }
+    },
+    allowedDevOrigins: ['*'],
+    turbopack: {},
 };
  
 export default withNextIntl(nextConfig);
