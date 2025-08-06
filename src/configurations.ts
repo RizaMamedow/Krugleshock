@@ -2,6 +2,8 @@ import {Pathnames, LocalePrefix} from 'next-intl/routing';
 
 export const LOCALES = ['ru', 'en']
 
+export const DEFAULT_LOCALE = 'ru';
+
 export const PATHNAMES: Pathnames<typeof LOCALES> = {
     '/': '/',
 };
