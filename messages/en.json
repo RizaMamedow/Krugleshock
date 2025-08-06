@@ -23,6 +23,11 @@
   },
   "Certificates": {
     "header": "My achivements"
+  },
+  "Metadata": {
+    "title": "Krugleshock | Riza Mamedow",
+    "description": "Riza Mamedow's website",
+    "authors":"Riza Mamedow"
   }
 }
 

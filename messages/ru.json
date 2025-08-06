@@ -23,6 +23,11 @@
   },
   "Certificates": {
     "header": "Мои достижения"
+  },
+  "Metadata": {
+    "title": "Krugleshock | Риза Мамедов",
+    "description": "Сайт Риза Мамедова",
+    "authors.name":"Риза Мамедова"
   }
 }
 

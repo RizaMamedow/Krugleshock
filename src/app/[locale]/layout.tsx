@@ -2,26 +2,34 @@ import type { Metadata } from "next";
 import { Piazzolla } from "next/font/google";
 import "./globals.css";
 import {NextIntlClientProvider} from 'next-intl';
-import {getLocale, getMessages} from 'next-intl/server';
+import {getLocale, getMessages, getTranslations} from 'next-intl/server';
 import Header from "@/src/components/Header";
 import Navbar from "@/src/components/Navbar";
 import References from '@/src/components/References';
 import LanguageSwitcher from "@/src/components/LanguageSwitcher";
 import clsx from "clsx";
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import {SOCIAL_LINKS} from "@/src/configurations";
 
-export const metadata: Metadata = {
-	title: "Krugleshock | Riza Mamedow",
-	description: "Riza Mamedow's portfolio website",
-	authors: {
-		name: "Riza Mamedow",
-		url: "krugleshock.vercel.app"
-	},
-	robots: "index, follow", 
-	icons: {
-		icon: "/favicon.ico"
-	}
-};
+interface LocaleProps {
+	params: {
+		locale: string;
+	};
+}
+
+
+export async function generateMetadata({ params: { locale }  } : LocaleProps): Promise<Metadata> {
+	const t = await getTranslations({ locale, namespace: 'Metadata' }); // Assuming a 'Metadata' namespace for translations
+
+	return {
+		title: t('title'),
+		description: t('description'),
+		authors: {
+			name: t('authors'),
+			url: SOCIAL_LINKS.github
+		},
+	};
+}
 
 const piazzolla = Piazzolla({
 	weight: ['200', '300', '400', '500', '600', '700', '800'],
