@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 ::selection,
-::moz-selection {
+::-moz-selection {
     background: #ffb7b7; 
 }
 
