@@ -10,12 +10,7 @@ import LanguageSwitcher from "@/src/components/LanguageSwitcher";
 import clsx from "clsx";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import {SOCIAL_LINKS} from "@/src/configurations";
-
-interface LocaleProps {
-	params: {
-		locale: string;
-	};
-}
+import {LocaleProps} from "@/src/types/props";
 
 
 export async function generateMetadata({ params: { locale }  } : LocaleProps): Promise<Metadata> {

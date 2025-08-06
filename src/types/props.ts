@@ -10,3 +10,9 @@ export type LanguageSwitcherSelectProps = {
     defaultValue: string;
     label: string;
 }
+
+export interface LocaleProps {
+    params: {
+        locale: string;
+    };
+}
