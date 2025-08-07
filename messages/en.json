@@ -28,6 +28,9 @@
     "title": "Krugleshock | Riza Mamedow",
     "description": "Riza Mamedow's website",
     "authors":"Riza Mamedow"
+  },
+  "NotFound": {
+    "title": "Page not found"
   }
 }
 
