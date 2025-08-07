@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl"
 import { Playfair_Display } from "next/font/google"
 
 const playfair = Playfair_Display({
-    weight: ['400', '700', '800', '900'],
+    weight: ['400', '900'],
     subsets: ['latin', 'cyrillic']
 })
 
@@ -12,7 +12,7 @@ export default function Header() {
 	return (
 		<div className={clsx(playfair.className, "flex justify-center items-center mt-5 sm:mb-7 flex-col gap-2")}>
 			<h1 className="text-secondary md:text-7xl text-5xl font-black">Krugleshock<span className="text-primary">!</span></h1>
-			<p className="font-regular text-xs text-start text-gray-500">{t("subtitle")}</p>
+			<p className="text-xs text-start text-gray-500">{t("subtitle")}</p>
 		</div>
 	)
 }

@@ -27,7 +27,7 @@ export async function generateMetadata({ params: { locale }  } : LocaleProps): P
 }
 
 const piazzolla = Piazzolla({
-	weight: ['200', '300', '400', '500', '600', '700', '800'],
+	weight: ['400', '500', '600', '700', '800'],
 	style: ['normal', 'italic'],
 	subsets: ['latin', 'cyrillic']
 })
