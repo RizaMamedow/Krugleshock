@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Piazzolla } from "next/font/google";
-import "./globals.css";
+import "./[locale]/globals.css";
 import {NextIntlClientProvider} from 'next-intl';
 import {getLocale, getMessages, getTranslations} from 'next-intl/server';
 import Header from "@/src/components/Header";
