@@ -5,6 +5,7 @@ import {useTranslations} from "next-intl";
 
 const rubikMonoOne = Rubik_Mono_One({
     weight: ['400'],
+    subsets: ["latin"]
 })
 
 export default function NotFound() {
